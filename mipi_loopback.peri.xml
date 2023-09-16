@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<efxpt:design_db name="mipi_loopback" device_def="T120F324" location="D:\VeggProjects\FPGA Examples\MIPI_Loopback" version="2021.2.323" db_version="20212999" last_change_date="Thu Aug 10 18:53:11 2023" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+<efxpt:design_db name="mipi_loopback" device_def="T120F324" location="D:\VeggProjects\FPGA Examples\MIPI_Loopback" version="2021.2.323" db_version="20212999" last_change_date="Sat Sep 16 11:20:07 2023" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
     <efxpt:device_info>
         <efxpt:iobank_info>
             <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
@@ -45,10 +45,9 @@
             <efxpt:output_clock name="mipi_rx_cal_clk" number="1" out_divider="6" adv_out_phase_shift="0"/>
             <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="" feedback_mode="internal"/>
         </efxpt:pll>
-        <efxpt:pll name="mypll" pll_def="PLL_TR0" ref_clock_name="" ref_clock_freq="74.25" multiplier="32" pre_divider="2" post_divider="1" reset_name="" locked_name="" is_ipfrz="false" is_bypass_lock="true">
-            <efxpt:output_clock name="tx_vga_clk" number="0" out_divider="11" adv_out_phase_shift="0"/>
-            <efxpt:output_clock name="tx_pixel_clk" number="1" out_divider="22" adv_out_phase_shift="0"/>
-            <efxpt:output_clock name="rx_pixel_clk" number="2" out_divider="22" adv_out_phase_shift="0"/>
+        <efxpt:pll name="mypll" pll_def="PLL_TR0" ref_clock_name="" ref_clock_freq="74.25" multiplier="32" pre_divider="2" post_divider="2" reset_name="" locked_name="" is_ipfrz="false" is_bypass_lock="true">
+            <efxpt:output_clock name="tx_pixel_clk" number="1" out_divider="11" adv_out_phase_shift="0"/>
+            <efxpt:output_clock name="rx_pixel_clk" number="2" out_divider="11" adv_out_phase_shift="0"/>
             <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="" feedback_mode="internal"/>
         </efxpt:pll>
     </efxpt:pll_info>
@@ -122,22 +121,6 @@
             </efxpt:mtx_info>
         </efxpt:mipi>
     </efxpt:mipi_info>
-    <efxpt:jtag_info>
-        <efxpt:jtag name="bscan" jtag_def="JTAG_USER1">
-            <efxpt:gen_pin>
-                <efxpt:pin name="bscan_UPDATE" type_name="UPDATE" is_bus="false"/>
-                <efxpt:pin name="bscan_TCK" type_name="TCK" is_bus="false"/>
-                <efxpt:pin name="bscan_SHIFT" type_name="SHIFT" is_bus="false"/>
-                <efxpt:pin name="bscan_TDI" type_name="TDI" is_bus="false"/>
-                <efxpt:pin name="bscan_RUNTEST" type_name="RUNTEST" is_bus="false"/>
-                <efxpt:pin name="bscan_RESET" type_name="RESET" is_bus="false"/>
-                <efxpt:pin name="bscan_DRCK" type_name="DRCK" is_bus="false"/>
-                <efxpt:pin name="bscan_CAPTURE" type_name="CAPTURE" is_bus="false"/>
-                <efxpt:pin name="bscan_TMS" type_name="TMS" is_bus="false"/>
-                <efxpt:pin name="bscan_TDO" type_name="TDO" is_bus="false"/>
-                <efxpt:pin name="bscan_SEL" type_name="SEL" is_bus="false"/>
-            </efxpt:gen_pin>
-        </efxpt:jtag>
-    </efxpt:jtag_info>
+    <efxpt:jtag_info/>
     <efxpt:ddr_info/>
 </efxpt:design_db>
