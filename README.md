@@ -2,21 +2,17 @@
 
 Trion T120 MIPI Development Kit: Loopback Example Design
 
-
 The mipi_loopback_top Efinity project helps you verify the functionality of
 the MIPI TX and RX interfaces on the Trion T20 MIPI development board. The 
 FPGA receives a video pattern from MIPI RX and transmits it out the MIPI TX.
 
+## Requirements:
 
-Requirements:
-
-
-Efinity software version 2019.2 or later
-
-Trion® T120 MIPI Development Board
-Raspberry Pi camera daughter card for MIPI RX
-A bridge to convert HDMI TX to MIPI TX for Raspberry Pi
-15-pin FFC/FPC cable
+- Efinity software version 2019.2 or later
+- Trion® T120 MIPI Development Board
+- Raspberry Pi camera daughter card for MIPI RX
+- A bridge to convert HDMI TX to MIPI TX for Raspberry Pi
+- 15-pin FFC/FPC cable
 
 ### Overview
 
